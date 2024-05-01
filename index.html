@@ -1,66 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bookmark: Reading Tracker</title>
-  <link rel="icon" href="bookmark_icon.png" type="image/png"> <!-- Bookmark iconu ekle -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
+# Bookmark: Reading Tracker
 
-    .container {
-      margin-top: 100px;
-    }
+Our new website will be with you very soon!
 
-    h1 {
-      color: #333;
-    }
+## Countdown
+Coming Soon! (Countdown to July 10, 2024)
 
-    p {
-      color: #666;
-    }
+## About
+Bookmark: Reading Tracker is an upcoming website designed to help you track your reading progress and discover new books.
 
-    .countdown {
-      font-size: 2em;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Bookmark: Reading Tracker</h1>
-    <p>Our new website will be with you very soon!</p>
-    <div class="countdown" id="countdown"></div>
-  </div>
-
-  <script>
-    // Countdown to Coming Soon
-    var countDownDate = new Date("May 10, 2024 00:00:00").getTime();
-
-    var x = setInterval(function() {
-
-      var now = new Date().getTime();
-      var distance = countDownDate - now;
-
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("countdown").innerHTML = days + " days " + hours + " hours "
-      + minutes + " minutes " + seconds + " seconds";
-
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "Now Open!";
-      }
-    }, 1000);
-  </script>
-</body>
-</html>
+Stay tuned for updates!
